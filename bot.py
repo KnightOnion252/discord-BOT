@@ -3,11 +3,11 @@ import discord
 
 client = discord.Client()
 
-messages=["Hi","Hello","Greetings","ARRRRRRRRRRRRRRRRRRGHH!","Namaste"]
-message=message[randrange(4)]
+messages=["Hi","Hello","Greetings","ARRRRRRRRRRRRRRRRRRGHH!","Namaste","Beep Boop","Ayya re Ayya","Knock Knock","Not this guy again"]
+message=message[randrange(7)]
 @client.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    print('Logged in as {0.user}'.format(client))
 
 @client.event
 async def on_message(message):
